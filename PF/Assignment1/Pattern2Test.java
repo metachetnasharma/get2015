@@ -1,4 +1,4 @@
-package assignment1;
+package assignment7;
 
 import static org.junit.Assert.*;
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class BinaryToOctalTest {
+public class Pattern2Test {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -28,10 +28,12 @@ public class BinaryToOctalTest {
 
 	@Test
 	public void test() {
-		
-		BinaryToOctal test1=new BinaryToOctal();
-		int output=test1.convertBinaryToOctal(110101);
-		assertEquals("",65,output);
+		Pattern2 p= new Pattern2() ;
+		String str=new String();
+		str=p.pattern(5);
+		String out=new String();
+		out="12345\n 1234\n  123\n   12\n    1\n";
+		assertEquals("",out,str);
 		//fail("Not yet implemented");
 	}
 
