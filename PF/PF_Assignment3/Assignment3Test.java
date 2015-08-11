@@ -1,4 +1,4 @@
-package assignment7;
+package recursion;
 
 import static org.junit.Assert.*;
 
@@ -8,8 +8,18 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class Pattern2Test {
-
+public class Assignment3Test {
+	Assignment3 ob=new Assignment3();
+	int arr1[]=new int[]{2,86,8,97,10, 59, 77};
+	int arr2[]=new int[]{};
+	int expected1[]=new int[]{2,8,10,59,77,86,97};
+	int expected2[]=new int[]{};
+	{
+	if(arr1.length>0)
+	arr1=ob.quicksort(arr1, 0, arr1.length-1);
+	if(arr2.length>0)
+	arr2=ob.quicksort(arr2, 0, arr2.length-1);
+	}
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -28,13 +38,9 @@ public class Pattern2Test {
 
 	@Test
 	public void test() {
-		Pattern2 p= new Pattern2() ;
-		String str=new String();
-		str=p.pattern(5);
-		String out=new String();
-		out="12345\n 1234\n  123\n   12\n    1\n";
-		assertEquals("",out,str);
-		//fail("Not yet implemented");
+		 assertArrayEquals(expected1,arr1);
+		 assertArrayEquals(expected2,arr2);
+		
 	}
 
 }
