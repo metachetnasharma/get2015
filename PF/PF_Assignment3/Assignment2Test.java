@@ -1,15 +1,21 @@
-package recursion;
+package PF_Assignment4;
 
 import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import junit.framework.Assert;
 
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class Assignment2Test {
-
+	Assignment2 permutation=new Assignment2();
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -29,38 +35,66 @@ public class Assignment2Test {
 
 	@Test
 	public void test() {
-		Assignment2 obj=new Assignment2();
-		int a[]=new int[]{2,5,8,9,10, 77, 55,71,51,45};
-	    int  element=obj.LinearSearch(a,88);
-	    assertEquals(0,element);
+		List<String> result;
+		result=permutation.generatePermutations("", "ABC");
+		List<String> output;
+		output=new ArrayList<String>();
+		output.add("ABC");
+		output.add("ACB");
+		output.add("BAC");
+		output.add("BCA");
+		output.add("CAB");
+		output.add("CBA");
+		
+		assertEquals(result, output);
+		result.clear();
 		//fail("Not yet implemented");
 	}
 	@Test
 	public void test1() {
-		Assignment2 obj1=new Assignment2();
-		int a[]=new int[]{2,5,8,9,10, 77, 55,71,51,45};
-	    int  element1=obj1.LinearSearch(a,77);
-	    assertEquals(1,element1);
-	    
+		List<String> result1;
+		result1=permutation.generatePermutations("","ABCD");
+		System.out.println(">"+result1.size());
+		
+		for(String str:result1)
+			System.out.println(">"+str);
+		
+		List<String> output1;
+		output1=new ArrayList<String>();
+		output1.add("ABCD");
+		output1.add("ABDC");
+		output1.add("ACBD");
+		output1.add("ACDB");
+		output1.add("ADBC");
+		output1.add("ADCB");
+		output1.add("BACD");
+		output1.add("BADC");
+		output1.add("BCAD");
+		output1.add("BCDA");
+		output1.add("BDAC");
+		output1.add("BDCA");
+		output1.add("CABD");
+		output1.add("CADB");
+		output1.add("CBAD");
+		output1.add("CBDA");
+		output1.add("CDAB");
+		output1.add("CDBA");
+		output1.add("DABC");
+		output1.add("DACB");
+		output1.add("DBAC");
+		output1.add("DBCA");
+		output1.add("DCAB");
+		output1.add("DCBA");
+		System.out.println(">"+output1.size());
+		
+	
+		
+		assertEquals(result1, output1);
+		
+		
+		
 		//fail("Not yet implemented");
 	}
-	@Test
-	public void test2() {
-		Assignment2 obj2=new Assignment2();
-		int a[]=new int[]{2,5,8,9,10,15,30,45,55,77};
-	    int element1=obj2.BinarySearch(a,30,a.length-1,0);
-	    assertEquals(1,element1);
-	    
-		//fail("Not yet implemented");
-	}
-	@Test
-	public void test3() {
-		Assignment2 obj3=new Assignment2();
-		int a[]=new int[]{2,5,8,9,10,15,30,45, 55, 77};
-	    int element1=obj3.BinarySearch(a,80,a.length-1,0);
-	    assertEquals(0,element1);
-	    
-		//fail("Not yet implemented");
-	}
+
 
 }
