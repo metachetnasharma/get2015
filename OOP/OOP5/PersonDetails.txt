@@ -1,0 +1,6 @@
+0,Chetna,8233249261,chetna@gmail.com,Avm,JECRC,Music/Dance/Games
+0,Nidhi,7548754856,nidhi@gmail.com,shiva academy School,VIT,Music/Dance
+0,Arushi,7415170199,arushi@gmail.com,School no. 1,PCE,Music/Dance/ReadingBooks
+0,neha,9876598765,neha@gmail.com,XYZ School,UDML,Music/Dance
+1,JECRC,8003339711,jecrc@gmail.com,Maths/Physics,Madhvi Jain/Vinayak Gupta,TCS/Infosys/Wipro
+1,Metacube,8993339711,Metacube@gmail.com,Physics/Hindi,Madhvi Jain/Uma Shankar,TCS/Infosys
