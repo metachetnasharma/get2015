@@ -1,0 +1,77 @@
+package DS5;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+/**
+ * class for queue operation
+ * 
+ * @author Chetna Sharma
+ *
+ */
+public class QueueUsingLinkedList {
+
+	Scanner scanner = new Scanner(System.in);
+	LinkedList<Integer> lList = new LinkedList<Integer>();
+
+	/**
+	 * function for enqueue
+	 * 
+	 * @param item
+	 */
+	public void enQueue(int item) {
+		lList.addLast(item);
+	}
+
+	/**
+	 * function for dequeue
+	 */
+	public void deQueue() {
+		if (!lList.isEmpty()) {
+			lList.removeFirst();
+		}
+	}
+
+	/**
+	 * function to display elements of queue
+	 */
+	public void display() {
+
+		for (int i = 0; i < lList.size(); i++) {
+			System.out.println(lList.get(i));
+		}
+	}
+
+	/**
+	 * function to check whether list is empty or not
+	 * 
+	 * @return boolean
+	 */
+	public boolean isEmpty() {
+		if (lList.isEmpty())
+			return true;
+		else
+			return false;
+	}
+
+	/**
+	 * checking input is integer or not
+	 * 
+	 * @param value
+	 *            :value to get
+	 * @return :an integer value
+	 */
+	public int checkingInteger(int value) {
+
+		do {// Validation
+
+			while (!scanner.hasNextInt()) {
+				System.out.println("That's not a number!Please enter again");
+				scanner.next(); // this is important!
+			}
+			value = scanner.nextInt();
+		} while (value <= 0);
+		return value;
+	}
+
+}
