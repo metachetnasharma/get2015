@@ -1,0 +1,50 @@
+package DS5;
+
+import java.util.Scanner;
+
+/**
+ * @author Chetna Sharma
+ *
+ */
+
+public class QueueImplementation {
+	public static void main(String args[]) {
+		QueueUsingLinkedList object = new QueueUsingLinkedList();
+		int choice = 0, item = 0;
+		Scanner scanner = new Scanner(System.in);
+		while (choice != 4) {
+			System.out.println("-----Menu-----");
+			System.out.println("1. To Enqueue");
+			System.out.println("2. To Dequeue");
+			System.out.println("3. To display elements of queue");
+			System.out.println("4. Exit");
+			choice = object.checkingInteger(choice);
+			switch (choice) {
+			case 1:
+				System.out.println("enter element that you want to enqueue");
+				item = object.checkingInteger(item);
+				object.enQueue(item);
+				break;
+
+			case 2:
+				object.deQueue();
+				break;
+
+			case 3:
+				System.out.println("Elements in queue are:");
+				object.display();
+				break;
+
+			case 4:
+				System.exit(0);
+				break;
+
+			default:
+				break;
+			}
+		}
+		scanner.close();
+
+	}
+
+}
