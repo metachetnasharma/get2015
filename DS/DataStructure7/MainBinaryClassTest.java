@@ -30,15 +30,23 @@ public class MainBinaryClassTest {
 	public void test() {
 		BinarySearch object = new BinarySearch();
 		int a[]=new int[]{2,5,8,9,10,15,30,45,55,77};
-	    int element1=object.binarySearch(a,30,a.length-1,0);
-	    assertEquals(6,element1);
+	    int element1=object.leftOccurrenceOfElement(2, 0, a);
+	    assertEquals(0,element1);
 	}
 	
 	@Test
 	public void test1() {
 		BinarySearch object = new BinarySearch();
 		int a[]=new int[]{2,5,8,9,10,15,30,45,55,77};
-	    int element1=object.binarySearch(a,11,a.length-1,0);
+	    int element1=object.binarySearch(5,0,a.length-1,a);
+	    assertEquals(1,element1);
+	}
+	
+	@Test
+	public void test2() {
+		BinarySearch object = new BinarySearch();
+		int a[]=new int[]{2,5,8,9,10,15,30,45,55,77};
+	    int element1=object.binarySearch(1,0,a.length-1,a);
 	    assertEquals(-1,element1);
 	}
 
