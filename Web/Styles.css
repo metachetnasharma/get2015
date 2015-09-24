@@ -1,0 +1,29 @@
+#wrapper {
+	border: 2px solid #55aaff;
+	width: 800px;
+	height:600px;
+	margin: 0 auto;
+}
+
+#header {
+	background: #cceffd;
+	font-weight: bold;
+	border: 2px solid #0080ff;
+	height: 60px;
+	font-size: 34px;
+	padding-top: 60px;
+	color: black;
+	padding-left: 20px;
+}
+
+#leftNav {
+	margin: 10px 10px 0px 20px;
+	border: 2px solid #0080ff;
+	float: left;
+	
+}
+
+#rightNav {
+	margin: 0px 0px 0px 300px;
+	float: float;
+}
