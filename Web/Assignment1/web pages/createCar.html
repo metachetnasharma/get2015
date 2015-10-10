@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>create car</title>
+<link rel="styleSheet" href="../css files/CreateCarStyle.css">
+</head>
+
+<body>
+<div class="wrapper">
+
+		<header>
+			<img src="../images/logo.png" alt="car dekho logo" width="400px"
+				height="100px" align="left">
+			
+		</header>
+	<form>
+		<div id="heading"><h2>CREATE CAR</h2></div>
+
+		<section>
+		
+		    <label class="left">Make<span id="span">*</span></label> 
+			<input class="input" type="text" placeholder="Company Name" pattern="[a-zA-Z ]+" name="make" required="required"><br><br><br> 
+	
+			<label class="left">Model<span id="span">*</span></label> 
+			<input class="input" type="text" name="model" placeholder="Model_Name" pattern="[a-zA-Z_]+" required="required"><br><br><br>
+
+	 		<label class="left">EngineInCC<span id="span">*</span></label> 
+	 		<input class="input" type="number" name="engineInCc" placeholder="engineInCc" min="500" max="4000" required="required"><br><br> <br>
+	 
+	 		<label class="left">FuelCapacity<span id="span">*</span></label>
+	  		<input class="input" type="number" name="fuelCapacity" placeholder="fuelCapacity" min="25" max="200" required="required"><br><br><br>
+	 
+	 		<label class="left">Mileage<span id="span">*</span></label>
+	 		<input class="input" type="number" name="mileage" placeholder="mileage" min="1" max="100" required="required"><br><br><br>
+	 
+	 		<label class="left">AC</label>
+	 		<div class="input">
+	   			<input type="radio" name="ac" value="true">available
+	   			<input  type="radio" name="ac" value="false">not available
+	 		</div><br><br><br>
+	 
+	 		<label class="left">Accessory Kit</label>
+	  		<input class="input" type="text" name="accessorykit" placeholder="Accessory Kit" pattern="[a-zA-Z_ ,]+"> <br><br><br>
+	 
+		 	<label class="left">Power Steering</label>
+	 		<div class="input">
+	   			<input type="radio" name="powerSteering" value="true">available
+	   			<input  type="radio" name="powerSteering" value="false">not available
+	 		</div><br><br><br>
+	 
+	 		<label class="left">Ex-Showroom Price<span id="span">*</span></label>
+	 		<input class="input" type="number"  name="exShowroomPrice" placeholder="exShowroomPrice" min="100000" max="100000000" required="required"><br><br><br>
+	
+	 		<label class="left">roadTax<span id="span">*</span></label> 
+	 		<input class="input" type="number" name="roadTax" placeholder="roadTax" min="2000" max="1000000" required="required"><br><br><br>
+	
+	 		<label class="left">onRoadPrice<span id="span">*</span></label> 
+	 		<input class="input" type="number" name="onRoadPrice" placeholder="onRoadPrice" min="102000" max="101000000" required="required"><br><br><br>
+ 		
+	 	    <label class="left">Created time<span id="span">*</span></label>
+	 		<input class="input" type="date" name="createdtime" required="required"><br><br><br>
+	 
+	  		<label class="left">Created By<span id="span">*</span></label>
+	 		<input class="input" type="text" name="createdby" name="Created By" placeholder="Created By" pattern="[a-zA-Z ]+" required="required"><br><br><br>
+			 
+			 <input class="button" type="submit" value="submit">
+		</section>
+
+	</form>
+	<footer><label>Copyright &copy 2015.&nbsp All rights reserved.</label></footer>
+	</div>
+</body>
+</html>
