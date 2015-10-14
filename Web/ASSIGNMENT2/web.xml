@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<servlet>
+<servlet-name>Validation</servlet-name>
+<servlet-class>com.Servlet.Validation</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Validation</servlet-name>
+<url-pattern>/Validation</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>ShowResult</servlet-name>
+<servlet-class>com.Servlet.ShowResult</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ShowResult</servlet-name>
+<url-pattern>/ShowResult</url-pattern>
+</servlet-mapping>
+
+<welcome-file-list>
+<welcome-file>index.html</welcome-file>
+</welcome-file-list>
+</web-app>
+
