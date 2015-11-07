@@ -2,11 +2,18 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Form</title>
-<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+<title>Plugin</title>
+ <link rel="stylesheet" href="../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+  <script src="../javascript/jquery-1.11.3.js"></script>
+  <script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+ 
 </head>
 <body>
-<h2 class="text-center hidden-xs">Sample Form</h2>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script><h2 class="text-center hidden-xs">Sample Form</h2>
 <div class="glyphicon glyphicon-expand visible-xs" style="font-size:50px;"></div>
 <div class="container-fluid well">
 
@@ -16,13 +23,13 @@
 			<label for="movietitle" class="col-lg-1 col-md-1 col-sm-3 col-xs-12 control-label" >Movie title</label>
 			
 			<div class="col-lg-5 col-md-5 col-sm-9 col-xs-12">
-				<input type="text" class="form-control" id="movietitle">
+				<input type="text" class="form-control" id="movietitle" data-toggle="popover" title="Movie title" data-content="Enter Movie title" data-trigger="hover">
 			</div>
 			
 			<label for="genre" class="col-lg-1 col-md-1 col-sm-3 col-xs-12 control-label">Genre</label>
 			
 			<div class="col-lg-5 col-md-5 col-sm-9 col-xs-12">
-			<select class="form-control" id="genre" >
+			<select class="form-control" id="genre" data-toggle="tooltip" data-placement="right" title="Select Movie Genre">
 			    <option disabled="disabled" selected="selected">Choose a Genre</option>
 				<option>Horror/Thriller</option>
 				<option>Comedy</option>
@@ -38,25 +45,25 @@
 			<label for="director" class="col-lg-1 col-md-1 col-sm-3 col-xs-12 control-label">Director</label>
 			
 			<div class="col-lg-2 col-md-5 col-sm-9 col-xs-12">
-				<input type="text" class="form-control" id="director">
+				<input type="text" class="form-control" id="director" data-toggle="popover" title="Director" data-content="Enter Director Name" data-trigger="hover">
 			</div>
 			
 			<label for="writer" class="col-lg-1 col-md-1 col-sm-3 col-xs-12 control-label">Writer</label>
 			
 			<div class="col-lg-2 col-md-5 col-sm-9 col-xs-12">
-				<input type="text" class="form-control" id="writer">
+				<input type="text" class="form-control" id="writer" data-toggle="popover" title="Writer" data-content="Enter Writer Name" data-trigger="hover">
 			</div>
 
 			<label for="producer" class="col-lg-1 col-md-1 col-sm-3 col-xs-12 control-label">Producer</label>
 			
 			<div class="col-lg-2 col-md-5 col-sm-9 col-xs-12">
-				<input type="text" class="form-control" id="producer">
+				<input type="text" class="form-control" id="producer" data-toggle="popover" title="Producer" data-content="Enter Producer Name" data-trigger="hover">
 			</div>
 			
 			<label for="composer" class="col-lg-1 col-md-1 col-sm-3 col-xs-12 control-label">Composer</label>
 			
 			<div class="col-lg-2 col-md-5 col-sm-9 col-xs-12">
-				<input type="text" class="form-control" id="composer">
+				<input type="text" class="form-control" id="composer" data-toggle="popover" title="Composer" data-content="Enter Composer Name" data-trigger="hover">
 			</div>
 	 </div>
 	
@@ -64,13 +71,13 @@
 			<label for="website" class="col-lg-1 col-md-1 col-sm-3 col-xs-12 control-label">Website</label>
 			
 			<div class="col-lg-5 col-md-5 col-sm-9 col-xs-12">
-				<input type="text" class="form-control" id="website">
+				<input type="text" class="form-control" id="website" data-toggle="popover" title="Website" data-content="Enter Website Name" data-trigger="hover">
 			</div>
 			
 			<label for="youtube" class="col-lg-1 col-md-1 col-sm-3 col-xs-12 control-label">Youtube trailer</label>
 			
 			<div class="col-lg-5 col-md-5 col-sm-9 col-xs-12">
-				<input type="text" class="form-control" id="youtube">
+				<input type="text" class="form-control" id="youtube" data-toggle="popover" title="Youtube trailer" data-content="Enter Youtube trailer Name" data-trigger="hover">
 			</div>
 	</div>
 	
@@ -111,5 +118,10 @@
 	</form>
 </div>
 
+
+
 </body>
 </html>
+
+
+
